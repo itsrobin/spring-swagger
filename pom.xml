@@ -7,6 +7,12 @@
   <version>1.0-SNAPSHOT</version>
   <name>spring-swagger Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <properties>
+    <swagger-version>1.3.8</swagger-version>
+    <spring-version>4.3.6.RELEASE</spring-version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -14,6 +20,23 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+
+    <!--SpringIoC(依赖注入)的基础实现	spring-core，spring 3.1 jar，(CGLIB)。-->
+    <!--spring-context.jar	Spring提供在基础IoC功能上的扩展服务，此外还提供许多企业级服务的支持，-->
+    <!--如邮件服务、任务调度、JNDI定位、EJB集成、远程访问、缓存以及各种视图层框架的封装等-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.wordnik</groupId>
+      <artifactId>swagger-jersey2-jaxrs_2.10</artifactId>
+      <version>${swagger-version}</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>spring-swagger</finalName>
