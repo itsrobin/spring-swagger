@@ -23,6 +23,13 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.12.6</version>
+    </dependency>
+
+
 
     <!--SpringIoC(依赖注入)的基础实现	spring-core，spring 3.1 jar，(CGLIB)。-->
     <!--spring-context.jar	Spring提供在基础IoC功能上的扩展服务，此外还提供许多企业级服务的支持，-->

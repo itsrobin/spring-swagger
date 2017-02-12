@@ -14,7 +14,7 @@ public class SpringWithSwagger extends ResourceConfig {
 
     public SpringWithSwagger() {
 
-        final String myRestPackage = "cn.itsrobin.swagger";
+        final String myRestPackage = "cn.itsrobin.action";
         final String jacksonPackage = "org.codehaus.jackson.jaxrs";
 
         final String swaggerJaxrsJsonPackage = "com.wordnik.swagger.jaxrs.json";

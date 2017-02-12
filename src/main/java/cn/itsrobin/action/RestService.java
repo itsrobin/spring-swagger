@@ -1,18 +1,13 @@
-package cn.itsrobin.swagger;
+package cn.itsrobin.action;
 
 
-import com.google.common.base.Joiner;
-import org.springframework.web.bind.annotation.RequestMethod;
+
+import cn.itsrobin.model.User;
 
 import javax.ws.rs.GET;
-import javax.ws.rs.OPTIONS;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author lifeng
@@ -22,15 +17,21 @@ import java.util.List;
 @Path("/restService")
 public class RestService {
 
-   public RestService(){
-
-        System.out.println(111111111);
-    }
-
     @GET
     @Path("/getUserText")
     @Produces(MediaType.TEXT_PLAIN)
     public String getUserText() {
         return "Hello,World!";
+    }
+
+    @GET
+    @Path("/getUserJson")
+    @Produces(MediaType.APPLICATION_JSON)
+    public User getUserJson() {
+        User user  = new User();
+        user.setName("snail");
+        user.setAge("22");
+        user.setSex("male");
+        return user;
     }
 }
