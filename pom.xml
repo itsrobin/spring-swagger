@@ -84,6 +84,7 @@
       <version>${jersey.version}</version>
     </dependency>
 
+     <!--使内嵌jetty支持jsp-->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-jsp</artifactId>
