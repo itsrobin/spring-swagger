@@ -10,4 +10,5 @@
   
   执行 http://localhost:8080/rest/restService/getUserJson 返回数据说明启动成功.
   
-#添加swagger  
+#添加swagger
+  SpringWithSwagger和SwaggerConfiguration注册了swagger的相关信息
