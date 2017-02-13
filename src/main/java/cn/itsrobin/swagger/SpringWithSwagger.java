@@ -9,6 +9,7 @@ import javax.ws.rs.ApplicationPath;
  * @author lifeng
  * @createTime 2017/2/12.
  * @updateTime 2017/2/12
+ * jersey的容器在启动的时候注册swagger和web接口
  */
 public class SpringWithSwagger extends ResourceConfig {
 

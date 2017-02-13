@@ -5,16 +5,18 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
+  <!--spring容器初始化-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:beans.xml</param-value>
   </context-param>
 
-  <!--监听器,依赖于spring-mvc-->
+  <!--监听器,管理spring容器的启动-->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
 
+  <!--jersey访问路径-->
   <servlet>
     <servlet-name>jersey-serlvet</servlet-name>
     <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
